@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caso clinico</title>
+    <link rel="stylesheet" href="./style.css">
+	<style>
+        .imagen-superior {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 360px;
+            height: 96px;
+		}
+
+        .imagen-inferior {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 142px;
+            height: 75px;
+        }
+    </style>
+
+         
+</head>
+
+
+
+<body style=background-color:#02165D;>
+
+	<img src="imagenesinstitucionales/logosimulacion.png" alt="Imagen Superior" class="imagen-superior">
+	
+	
+	
+    <div id="pregunta">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+        <p><h1> <p style="color: #FFFFFF";> PRUEBAS DIAGNÓSTICAS</h1></p>
+        <p><h1></h1> <p style="color: #FFFFFF";> Con base a la información que has recibido de este caso, tendrás que decidir si es necesario enviar la siguiente prueba diagnóstica: </h2>  </p>
+        <p><h2> <p style="color: #FFFFFF";> Perfil integral (hemograma, bioquímica sanguínea, urianálisis con urocultivo) </h2>   </p>
+        
+ 
+        <label for="verdadero"> SI   </label>
+        <input type="radio" id="verdadero" name="respuesta" value="verdadero"> 
+
+  
+        <label for="falso"> NO  </label>
+        <input type="radio" id="falso" name="respuesta" value="falso">
+   
+    <input type="submit"  class="boton1" value="Enviar respuestas"; onclick="verificarRespuesta()" >
+
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function verificarRespuesta() {
+            var respuestaElegida = document.querySelector('input[name="respuesta"]:checked');
+            var resultado = document.getElementById('resultado');
+
+            if (respuestaElegida) {
+                if (respuestaElegida.value === 'verdadero') {
+                    window.location.href = "retro.html#seccion9"; 
+                } else {
+                    window.location.href = "retro.html#seccion10"; 
+                }
+            } else {
+                resultado.textContent = 'Por favor, elige una respuesta.';
+            }
+        }
+    </script>
+</body>
+</html>

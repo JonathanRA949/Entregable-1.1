@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caso clinico</title>
+    <link rel="stylesheet" href="./style.css">
+	<style>
+        .imagen-superior {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 360px;
+            height: 96px;
+		}
+
+        .imagen-inferior {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 142px;
+            height: 75px;
+        }
+    </style>
+
+         
+</head>
+
+
+
+
+<body>
+
+    <body style=background-color:#02165D;>
+
+        <img src="imagenesinstitucionales/logosimulacion.png" alt="Imagen Superior" class="imagen-superior">
+       
+        
+        
+    <div id="pregunta">
+        <p><h1> <p style="color: #FFFFFF";>DIAGNÓSTICO DEFINITIVO</h1></p>
+        <p><h1></h2> <p style="color: #FFFFFF";> <br> Seleccione la opción correcta: </h2>  </p>
+        <p><h1> <p style="color: #FFFFFF";> <br><br> PROBLEMA CLÍNICO: Posición plantígrada <br><br><br></h1> </p>
+        
+ 
+        <label for="verdadero"> A. Diabetes mellitus tipo II  </label>
+       
+        <input type="radio" id="verdadero" name="respuesta" value="verdadero"> 
+
+  
+        <label for="falso"> B. Ruptura de tendón del calcáneo común</label>
+       
+        <input type="radio" id="falso" name="respuesta" value="falso">
+
+        
+        <div style="text-align:center;"> 
+
+        <input type="submit"  class="boton9" value="Enviar respuestas"; onclick="verificarRespuesta()" >
+
+        <p id="resultado"></p>
+    </div>
+</div>
+
+    <script>
+        function verificarRespuesta() {
+            var respuestaElegida = document.querySelector('input[name="respuesta"]:checked');
+            var resultado = document.getElementById('resultado');
+
+            if (respuestaElegida) {
+                if (respuestaElegida.value === 'verdadero') {
+                    window.location.href = "retro.html#seccion20"; 
+                } else {
+                    window.location.href = "retro.html#seccion21"; 
+                }
+            } else {
+                resultado.textContent = 'Por favor, elige una respuesta.';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caso clinico</title>
+    <link rel="stylesheet" href="./style.css">
+	<style>
+        .imagen-superior {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 360px;
+            height: 96px;
+		}
+
+        .imagen-inferior {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 142px;
+            height: 75px;
+        }
+    </style>
+         
+</head>
+
+
+
+<body style=background-color:#02165D;>
+	<img src="imagenesinstitucionales/logosimulacion.png" alt="Imagen Superior" class="imagen-superior">
+	
+	
+    <div id="pregunta">
+
+       
+        <p><h1> <p style="color: #FFFFFF";> <br><br><br>PRUEBAS DIAGNÓSTICAS COMPLEMENTARIAS </h1></p>
+        <p><h2> <p style="color: #FFFFFF";> Con base en la interpretación que realizaste de las pruebas de laboratorio, ¿consideras necesario realizar la siguiente prueba? </h2>  </p>
+           <p> <h1> <p style="color: #FFFFFF";> <br> Fructosamina</h1></p>
+           <br>
+             
+            <label for="verdadero">SI   </label>
+           <input type="radio" id="verdadero" name="respuesta" value="verdadero"> 
+   
+           <label for="falso"> NO  </label>
+           <input type="radio" id="falso" name="respuesta" value="falso">
+           
+      
+     
+    <input type="submit"  class="boton9" value="Enviar respuestas"; onclick="verificarRespuesta()" >
+    <p id="resultado"></p>
+</div>
+
+
+    <script>
+        function verificarRespuesta() {
+            var respuestaElegida = document.querySelector('input[name="respuesta"]:checked');
+            var resultado = document.getElementById('resultado');
+
+            if (respuestaElegida) {
+                if (respuestaElegida.value === 'verdadero') {
+                    window.location.href = "retro.html#seccion11"; 
+                    
+                } else {
+                    window.location.href = "retro.html#seccion"; 
+                    window.location.href = "retro.html#seccion12";
+                }
+            } else {
+                resultado.textContent = 'Por favor, elige una respuesta.';
+            }
+        }
+    </script>
+</body>
+</html>

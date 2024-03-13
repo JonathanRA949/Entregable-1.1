@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caso clinico</title>
+    <link rel="stylesheet" href="./style.css">
+    <h1>.</h1>
+
+    <title></title>
+</head>
+<body style=background-color:#02165D;>
+
+	<div class="img">
+    <div id="imagenContainer">
+        <img id="imagen1" src="img/index.gif" alt="Imagen 1">
+        <img id="imagen2" src="img/resena.gif" alt="Imagen 2"style="display: none;">
+        <img id="imagen3" src="img/historia.gif" alt="Imagen 3" style="display: none;">
+        <img id="imagen4" src="img/anamnesis.gif" alt="Imagen 4" style="display: none;">
+		<img id="imagen5" src="img/examenfisico.gif" alt="Imagen 5" style="display: none;">
+        <img id="imagen6" src="img/listap.gif" alt="Imagen 6" style="display: none;">
+    </div>
+</div>
+
+    <button onclick="mostrarSiguienteImagen()">Siguiente</button>
+
+    <script>
+        var imagenActual = 1;
+
+        function mostrarSiguienteImagen() {
+            var imagenActualElement = document.getElementById('imagen' + imagenActual);
+            imagenActualElement.style.display = 'none';
+
+            imagenActual++;
+            if (imagenActual > 6) {
+                // Redirige al usuario a otro archivo HTML después de la quinta imagen
+                window.location.href = 'pregunta.html';
+            } else {
+                var siguienteImagenElement = document.getElementById('imagen' + imagenActual);
+                siguienteImagenElement.style.display = 'block';
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+
+  .opcion {
+     
+ 
+    background-color: #ffffff; /* Fondo blanco para las opciones */
+    color: #000000; /* Texto negro para las opciones */
+    width: 1100px; /* Establece el ancho deseado */
+    height: 80pxpx; /* Establece la altura deseada */
+   /*  border: 1px solid #ccc; Añade un borde para mayor claridad */
+    margin: 5px; /* Agrega un margen para separar las opciones */
+    padding: 5px; /* Añade relleno para dar espacio al contenido interno */
+    border-radius: 5px;
+    border: 1px solid #437bbb;
+    cursor: pointer; /* Cambia el cursor al pasar sobre la opción */
+    transition: background-color 0.3s, color 0.3s; /* Añade transición para suavizar el cambio de color */
+}
+
+.opcion:hover {
+    background-color: #0fe3d2; /* Cambia el color de fondo al pasar el cursor sobre la opción */
+    color: #db2121; /* Cambia el color del texto al pasar el cursor sobre la opción */
+}
+
+
+.opcion1 {
+     
+ 
+  background-color: #ffffff; /* Fondo blanco para las opciones */
+  color: #000000; /* Texto negro para las opciones */
+  width: 1100px; /* Establece el ancho deseado */
+  height: 250px; /* Establece la altura deseada */
+ /*  border: 1px solid #ccc; Añade un borde para mayor claridad */
+  margin: 5px; /* Agrega un margen para separar las opciones */
+  padding: 5px; /* Añade relleno para dar espacio al contenido interno */
+  border-radius: 5px;
+  border: 1px solid #437bbb;
+  cursor: pointer; /* Cambia el cursor al pasar sobre la opción */
+  transition: background-color 0.3s, color 0.3s; /* Añade transición para suavizar el cambio de color */
+}
+
+.opcion1:hover {
+  background-color: #0fe3d2; /* Cambia el color de fondo al pasar el cursor sobre la opción */
+  color: #dbad21; /* Cambia el color del texto al pasar el cursor sobre la opción */
+}
+
+.opcion2 {
+     
+ 
+  background-color: #ffffff; /* Fondo blanco para las opciones */
+  color: #000000; /* Texto negro para las opciones */
+  width:80px; /* Establece el ancho deseado */
+  height: 60px; /* Establece la altura deseada */
+ /*  border: 1px solid #ccc; Añade un borde para mayor claridad */
+  margin: 5px; /* Agrega un margen para separar las opciones */
+  padding: 5px; /* Añade relleno para dar espacio al contenido interno */
+  border-radius: 5px;
+  border: 1px solid #437bbb;
+  cursor: pointer; /* Cambia el cursor al pasar sobre la opción */
+  transition: background-color 0.3s, color 0.3s; /* Añade transición para suavizar el cambio de color */
+}
+
+.opcion2:hover {
+  background-color: #0fe3d2; /* Cambia el color de fondo al pasar el cursor sobre la opción */
+  color: #dbad21; /* Cambia el color del texto al pasar el cursor sobre la opción */
+}
+  .imagenpregunta { 
+    position: absolute;
+    top: center;
+    right: 300px;
+    width: 300px;
+    height: 180px;
+    padding-top: 10px;
+    margin-top: 140px;
+
+
+  }
+.boton2 {
+   
+    background-color: #ffdb3b; /*determina el tamaño del boton */
+    color: rgb(8, 8, 8);/*determina el color de las letras*/
+    padding: 10px 20px;/* deterina el tamaño del boton*/
+    text-decoration: none; /* le quita el subrayado o  decoración */
+    border-radius: 10px; /* hace e boton con forma rectangular sin puntas*/
+    position: absolute;/*posiciona el boton dentro de la imagen*/
+    margin: 4px 2px;
+    font-size: 18px;
+    cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+    text-align: center; /* se centra el boton */
+    bottom: -55px; /* esto define la pocision de abajo hacia arriba*/     /*MAS ABAJO DE LA PANTALLA*/
+   
+}
+/* Cambio de estilo al pasar el mouse sobre el botón */
+.boton2:hover {
+    background-color: #d6ad19;
+}
+
+
+.button{
+  background-color: #ffdb3b; /*determina el tamaño del boton */
+  color: rgb(8, 8, 8);/*determina el color de las letras*/
+  padding: 10px 20px;/* deterina el tamaño del boton*/
+  text-decoration: none; /* le quita el subrayado o  decoración */
+  border-radius: 10px; /* hace e boton con forma rectangular sin puntas*/
+  position: absolute;/*posiciona el boton dentro de la imagen*/
+  margin: 4px 2px;
+  font-size: 18px;
+  cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+  text-align: center; /* se centra el boton */
+  bottom: -55px; /* esto define la pocision de abajo hacia arriba*/     /*MAS ABAJO DE LA PANTALLA*/
+ 
+
+
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  
+  
+}
+
+
+
+.feedback-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #8ea3c3; /* Color de fondo verde claro */
+    border: 1px solid  #5fba83;/* Borde verde claro */
+    border-radius: 50px;
+    margin: 25px;
+    
+}
+.feedback-container1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #db6c6c; /* Color de fondo verde claro */
+    border: 1px solid  #cf5353;
+    border-radius: 50px;
+    margin: 10px;
+}
+.feedback-container2 {
+  text-align: center;
+  background-color: #b2b3b437; /* Color de fondo verde claro */
+  border: 1px solid  #1657b7;/* Borde verde claro */
+  margin: 10px;
+  font-family: 'Century Gothic';
+  border: 1px solid #808080; /* Color gris para el contorno */
+  padding: 10px; /* Puedes ajustar según sea necesario */
+  box-shadow: 0px 0px 5px 2px #808080; /* Sombreado gris */
+}
+.img {
+    max-width: 300px;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+   
+}
+.imagen-superior {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 340px;
+    height: 80px;
+    margin: 10px;
+}
+.background-section {
+    background-image: url('img/fondo6.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center center; /* Posiciona la imagen en el centro */
+    background-attachment: fixed; /* Hace que la imagen permanezca fija mientras se desplaza la página */
+    height: 50vh; /* Ajusta la altura de la sección según sea necesario */
+  
+  }
+  .background-section2 {
+    background-image: url('img/gatofel.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center center; /* Posiciona la imagen en el centro */
+    background-attachment: fixed; /* Hace que la imagen permanezca fija mientras se desplaza la página */
+    height: 50vh; /* Ajusta la altura de la sección según sea necesario */
+  
+  }
+
+  .background-section3 {
+    background-image: url('img/enojado.png');
+    background-size: contain; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Posiciona la imagen en el centro */
+    background-attachment: fixed; /* Hace que la imagen permanezca fija mientras se desplaza la página */
+    height: 60vh; /* Ajusta la altura de la sección según sea necesario */
+    background-repeat: no-repeat;
+    
+  }
+  .background-section4 {
+    background-image: url('img/diagno.jpg');
+    background-size: contain; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Posiciona la imagen en el centro */
+    background-attachment: fixed; /* Hace que la imagen permanezca fija mientras se desplaza la página */
+    height: 60vh; /* Ajusta la altura de la sección según sea necesario */
+    background-repeat: no-repeat;
+    
+  }
+  
+.background-section5 {
+  background-image: url('img/ultrasonido.png');
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+  background-position: center center; /* Posiciona la imagen en el centro */
+  background-attachment: fixed; /* Hace que la imagen permanezca fija mientras se desplaza la página */
+  height: 50vh; /* Ajusta la altura de la sección según sea necesario */
+}
+
+.background-section6 {
+  background-image: url('img/diagnosticopro.jpg');
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+  background-position: center center; /* Posiciona la imagen en el centro */
+  background-attachment: fixed; /* Hace que la imagen permanezca fija mientras se desplaza la página */
+  height: 200px; /* Ajusta la altura de la sección según sea necesario */
+}
+
+.background-section7 {
+  background-image: url('img/hero2.png');
+  background-size: AUTO; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+  background-position: center center; /* Posiciona la imagen en el centro */
+  background-attachment: fixed; /* Hace que la imagen permanezca fija mientras se desplaza la página */
+  height:200px; /* Ajusta la altura de la sección según sea necesario */
+  
+}
+  .resena  {
+    
+    background-size: contain; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Posiciona la imagen en el centro */
+     /* background-attachment: fixed; /* Hace que la imagen permanezca fija mientras se desplaza la página */
+    height: 60vh; /* Ajusta la altura de la sección según sea necesario */
+    background-repeat: no-repeat;
+  
+
+
+  }
+
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 300px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.167);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  #2f2e2e;
+    
+  }
+
+  .overlay1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    width: 300px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.204);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid  #2f2e2e;
+    
+  }
+
+  .text-on-image {
+    color: #f6f6f6;
+    font-size: 42px;
+    font-weight: bold;
+  }
+
+  .text-on-image2{
+    color: #363434;
+    font-size: 42px;
+    font-weight: bold;
+  }

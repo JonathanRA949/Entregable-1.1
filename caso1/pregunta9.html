@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caso clinico</title>
+    <link rel="stylesheet" href="./style.css">
+	<style>
+        .imagen-superior {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 360px;
+            height: 96px;
+		}
+
+        .imagen-inferior {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 142px;
+            height: 75px;
+        }
+    </style>
+
+         
+</head>
+
+
+
+
+<body>
+
+    <body style=background-color:#02165D;>
+
+        <img src="imagenesinstitucionales/logosimulacion.png" alt="Imagen Superior" class="imagen-superior">
+       
+        
+    
+   
+        <div class="Pregunta">
+    <form id="examenForm">
+         
+
+
+
+        <p><h1> <p style="color: #FFFFFF";>Plan terapéutico </h1></p>
+        <p><h1></h1> <p style="color: #FFFFFF";> Seleccione la opción correcta: </h2>  </p>
+
+
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="3"></p>
+        <label for="pregunta2"><h1></h1> </label>
+        <label for="pregunta2"><h2></h2> </label>
+
+        <div class="rectangulo">
+        <input type="radio" name="pregunta2" value="1">  
+        <nav>
+        <ul>
+        <p>Insulina ultralenta (glargina).        </p>
+        <P>Dieta alta en fibra y proteínas, baja en carbohidratos. </P>
+        <p>Ejercicio.  </p>
+              </ul>
+        </nav>
+        </div>
+
+
+        <div class="rectangulo">
+        <input type="radio" name="pregunta2" value="2"> 
+        <nav>
+        <ul>
+        <p>Insulina intermedia (NPH).</p>
+        <P> Dieta casera alta en fibra.   </P>
+        <p>   Reposo. </p>
+        </ul>
+        </nav>
+    </div>
+
+
+ <div class="rectangulo">
+        <input type="radio" name="pregunta2" value="3"><br>
+        <nav>
+            <ul>
+            <p> Insulina ultralenta (glargina).    </p>
+            <P>Dieta baja en proteína, baja en fibra  </P>
+            <p>  Ejercicio   </p>
+            </ul>
+            </nav>
+        </div>
+
+
+        <div class="rectangulo">
+        <input type="radio" name="pregunta2" value="4"> 
+        <nav>
+            <ul>
+            <p>Insulina regular (rápida o cristalina).       </p>
+            <P>Dieta baja en fibra, baja en proteína.     </P>
+            <p> Reposo.   </p>
+        
+            </ul>
+            </nav>
+        </div>
+
+        <br>
+
+        <input type="submit"  class="boton5" value="Enviar respuestas"; >
+    </form>
+</div>
+   
+    <div id="resultado"></div>
+    </div>
+</div>
+</div>
+    <script>
+     
+        document.getElementById('examenForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que se envíe el formulario por defecto
+
+            // Obtén las respuestas del formulario
+            var respuesta1 = document.querySelector('input[name="pregunta2"]:checked');
+
+            // Verifica las respuestas y proporciona retroalimentación
+            var resultado = document.getElementById('resultado');
+            resultado.innerHTML = '';
+
+            if (respuesta1) {
+                if (respuesta1.value === '1') {
+                    window.location.href = "retro.html#seccion22"; 
+
+                } else if  (respuesta1.value === '2') {
+                    window.location.href = "retro.html#seccion23"; 
+    
+
+                } else if (respuesta1.value === '3') {
+                    window.location.href = "retro.html#seccion24"; 
+
+
+                } else if (respuesta1.value === '4') {
+                    window.location.href = "retro.html#seccion25";
+                } else {
+                resultado.innerHTML = 'Por favor, responde todas las preguntas.';
+                imagen.style.display = "block";
+               
+    
+                
+            }}
+        });
+
+      
+    </script>
+
+   
+
+</div>    
+</body>
+</html>
+

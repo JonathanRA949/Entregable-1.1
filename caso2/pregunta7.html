@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Caso clinico 2</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+  
+</head>
+<body>
+ 
+   
+   
+
+  <header class="container">
+    <div class="row">
+        <!-- Primera imagen al inicio -->
+        <div class="col text-left">
+            <img src="img/logo_unam.svg" alt="Imagen 1" class="img-fluid" width="200" height="100">
+        </div>
+
+        <!-- Segunda imagen centrada -->
+        <div class="col text-center">
+            <img src="img/catic.png" alt="" class="img-fluid" width="130" height="130">
+        </div>
+
+        <!-- Tercera imagen al final -->
+        <div class="col text-right">
+            <img src="img/escudo_fmvz.png" alt="Imagen 3" class="img-fluid" width="75" height="120">
+        </div>
+    </div>
+</header>
+
+    <div class="container-lg">
+      <div class="container-xxl text-center">
+        <div class="row align-items-start">
+          <div class="col"  style="background-color: #ccced6; height: 30px">
+            </div>
+        </div>
+      </div>  
+
+      <div class="container-xxl text-center">
+        <div class="row align-items-start">
+          <div class="col"  style="background-color: #0b2e59; height: 60px">
+            <h5 style="color: #FFFFFF; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+             'Lucida Sans', Arial, sans-serif;" > </h5>
+           
+          </div>
+        </div>
+      </div>  
+    </div>  
+
+      <!-- Contenido de tu sección con la imagen de fondo fija -->
+  
+  <div class="background-section4">
+    <div class="overlay">
+      <h1 class="text-on-image "; style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
+      'Lucida Sans', Arial, sans-serif" >PLAN TERAPÉUTICO </h1>
+    </div>
+  </div>
+
+<div class="container " style="background-color:#537195 ;border-radius: 10px;">
+
+
+  <h5 style="margin: 5px;"> </h5>
+  <br> 
+  <h1 style="text-align: center; color:  #FFFFFF; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" ></h1> 
+  <h5 style="text-align: center; color:  #FFFFFF; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" >
+    Seleccione la opción correcta:
+</h5> <br>
+</div>
+
+    
+
+<div class="container" style="background-color: #ffffff16; border: 1px solid #ffffff; display: flex;">
+    <div class="opcion1" style="background-color: #346c9516; margin-right: 10px;" onclick="verificarRespuesta('a')">A)
+        <div>1.Alimentación forzada<br>
+             2.Terapia de líquidos  con soluciones de lactato y glucosa<br>
+             3. Ácido ursodesoxicólico <br>
+             4. Taurina y L-carnitina
+       </div>
+    </div>
+
+    <div class="opcion1" style="background-color: #53b3f716; margin-right: 10px;" onclick="verificarRespuesta('b')">B)
+        <div>1. Sonda de alimentación esofágica<br>
+             2. Terapia de líquidos con solución salina y suplementación electrolítica<br>
+             3.  Vitamina K <br>
+             4. Taurina, L-carnitina y silimarina
+            
+        </div>
+    </div>
+
+    <div class="opcion1" style="background-color: #346c9516; margin-right: 10px;" onclick="verificarRespuesta('c')">C)
+        <div>1. Estimulantes del apetito <br>
+             2. Terapia de líquidos  con solución Hartman<br>
+             3. Ácido ursodesoxicólico <br>
+             4. carnitina
+               </div>
+    </div>
+
+    <div class="opcion1" style="background-color: #53b3f716; margin-right: 10px;" onclick="verificarRespuesta('d')">D)
+        <div>1. Sonda de alimentación nasoesofágica <br>
+             2. Terapia de líquidos con solución salina <br>
+             3. Silimarina<br>
+             4. Vitamina K
+             </div>
+    </div>
+</div>
+
+
+<script>
+  function verificarRespuesta(respuesta) {
+    if (respuesta === 'a') {
+      window.location.href =  "retro2.html#seccion21";
+
+    } else if (respuesta === 'b')  {
+      window.location.href =  "retro2.html#seccion22";
+    
+    } else if (respuesta === 'c')  {
+      window.location.href =  "retro2.html#seccion23";
+
+    } else if (respuesta === 'd')  {
+      window.location.href =  "retro2.html#seccion24";
+        
+    } else {
+      window.location.href = 'Por favor, responde todas las preguntas.';
+                imagen.style.display = "block";
+    }
+
+  }
+</script>
+
+</body>
+</html>

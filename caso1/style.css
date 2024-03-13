@@ -1,0 +1,429 @@
+*{
+    margin: -10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-size: contain;/* */
+    background-repeat: no-repeat;/* para que la imagen no  se repita en la pantalla  */
+    background-position: center;/* centra imagen*/
+    margin: 0px; /*margen */
+    padding: top 0px; ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+       }
+
+
+img {   /*aqui se modifica el estilo  de todas las imagenes */
+background-repeat: no-repeat;/* para que la imagen no  se repita en la pantalla  */
+background-size: auto;/* */
+background-position: center;/* centra imagen*/
+width: 950px;/*ANCHO */
+height: 450px;/* ALTURA*/
+margin: 0px;
+padding: 0px; 
+
+}
+
+.img-container{   /*aqui se modifica el estilo  de todas las imagenes */
+    background-repeat: no-repeat;/* para que la imagen no  se repita en la pantalla  */
+    background-size: auto;/* */
+    background-position: center;/* centra imagen*/
+    width: 1050px;/*ANCHO */
+    height: 450px;/* ALTURA*/
+    margin: 0px;
+    padding: 0px; 
+    
+    }
+
+.container { /*no se esta usando */
+    display: flex; /**/
+    justify-content: center; /*centrar imagen */ 
+    background-color: rgb(239, 236, 222); /*color de fonfo*/ 
+    width: 1250px;/*ancho*/
+     margin: 0px; /*margen */
+     height: 1000px;
+
+}
+
+
+.container2 { /*no se esta usando */
+    display: flex; /**/
+    justify-content: center; /*centrar imagen */ 
+    background-color: rgb(239, 236, 222); /*color de fonfo*/ 
+    width: 1250px;/*ancho*/
+     margin: 0px; /*margen */
+     height: 700px;
+
+}
+
+button {
+    background-color: #426b87; /*determina el tamaño del boton */
+    color: white;/*determina el color de las letras*/
+    padding: 10px 20px;/* deterina el tamaño del boton*/
+    text-decoration: none; /* le quita el subrayado o  decoración */
+    border-radius: 5px; /* hace e boton con forma rectangular sin puntas*/
+    position: absolute;/*posiciona el boton dentro de la imagen*/
+    margin: 4px 2px;
+    font-size: 16px;
+    cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+    text-align: center; /* se centra el boton */
+    bottom: 10px; /* esto define la pocision de abajo hacia arriba*/
+    transform: translateX(-50%);
+
+}
+ .boton2 {
+     
+    background-color: #426b87; /*determina el tamaño del boton */
+    color: white;/*determina el color de las letras*/
+    padding: 10px 20px;/* deterina el tamaño del boton*/
+    text-decoration: none; /* le quita el subrayado o  decoración */
+    border-radius: 5px; /* hace e boton con forma rectangular sin puntas*/
+    position: absolute;/*posiciona el boton dentro de la imagen*/
+    margin: 4px 2px;
+    font-size: 16px;
+    cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+    padding: 10px 20px;
+    text-align: center; /* se centra el boton */
+    bottom: -200px; /* esto define la pocision de abajo hacia arriba*/     /*MAS ABAJO DE LA PANTALLA*/
+    transform: translateX(-50%);
+
+}   
+
+
+.boton3 {
+     
+    background-color: #426b87; /*determina el tamaño del boton */
+    color: white;/*determina el color de las letras*/
+    padding: 10px 20px;/* deterina el tamaño del boton*/
+    text-decoration: none; /* le quita el subrayado o  decoración */
+    border-radius: 5px; /* hace e boton con forma rectangular sin puntas*/
+    position: absolute;/*posiciona el boton dentro de la imagen*/
+    margin: 4px 2px;
+    font-size: 16px;
+    cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+    padding: 10px 20px;
+    text-align: center; /* se centra el boton */
+    bottom: -600px; /* esto define la pocision de abajo hacia arriba*/     /*DEL TAMAÑO DE 2 PANTALLAS*/
+    transform: translateX(-50%);
+
+}
+
+
+.boton4 {
+     
+    background-color: #426b87; /*determina el tamaño del boton */
+    color: white;/*determina el color de las letras*/
+    padding: 10px 20px;/* deterina el tamaño del boton*/
+    text-decoration: none; /* le quita el subrayado o  decoración */
+    border-radius: 5px; /* hace e boton con forma rectangular sin puntas*/
+    position: absolute;/*posiciona el boton dentro de la imagen*/
+    margin: 4px 2px;
+    font-size: 16px;
+    cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+    padding: 10px 20px;
+    text-align: center; /* se centra el boton */
+    bottom: -1800px; /* esto define la pocision de abajo hacia arriba*/           /* MAS DE 2 PANTALLAS*/
+    transform: translateX(-50%);
+
+}   
+
+.boton5 {
+     
+    background-color: #426b87; /*determina el tamaño del boton */
+    color: white;/*determina el color de las letras*/
+    padding: 10px 20px;/* deterina el tamaño del boton*/
+    text-decoration: none; /* le quita el subrayado o  decoración */
+    border-radius: 5px; /* hace e boton con forma rectangular sin puntas*/
+    position: absolute;/*posiciona el boton dentro de la imagen*/
+    margin: 4px 2px;
+    font-size: 16px;
+    cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+    padding: 10px 20px;
+    text-align: center; /* se centra el boton */
+    bottom: 150px; /* esto define la pocision de abajo hacia arriba*/              /*MITAD DE PANTALLA*/
+    transform: translateX(-90%);
+
+}   
+.boton6 {
+
+background-color: #426b87; /*determina el tamaño del boton */
+color: white;/*determina el color de las letras*/
+padding: 10px 20px;/* deterina el tamaño del boton*/
+text-decoration: none; /* le quita el subrayado o  decoración */
+border-radius: 5px; /* hace e boton con forma rectangular sin puntas*/
+position: absolute;/*posiciona el boton dentro de la imagen*/
+margin: 4px 2px;
+font-size: 16px;
+cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+padding: 10px 20px;
+text-align: center; /* se centra el boton */
+bottom: 300px; /* esto define la pocision de abajo hacia arriba*/        /* MENOS DE LA MITAD DE PANTALLA*/
+transform: translateX(-50%);
+}
+.boton1 {
+     
+      background-color: #426b87; /*determina el tamaño del boton */
+      color: white;/*determina el color de las letras*/
+      padding: 10px 20px;/* deterina el tamaño del boton*/
+      text-decoration: none; /* le quita el subrayado o  decoración */
+      border-radius: 5px; /* hace e boton con forma rectangular sin puntas*/
+      position: absolute;/*posiciona el boton dentro de la imagen*/
+      margin: 4px 2px;
+      font-size: 16px;
+      cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+      padding: 10px 20px;
+      text-align: center; /* se centra el boton */
+      bottom: 10px; /* esto define la pocision de abajo hacia arriba*/      /*MITAD DE PANTALLA BAJA*/
+      transform: translateX(-90%);
+  
+  }   
+  .boton7 {
+     
+    background-color: #426b87; /*determina el tamaño del boton */
+    color: white;/*determina el color de las letras*/
+    padding: 10px 20px;/* deterina el tamaño del boton*/
+    text-decoration: none; /* le quita el subrayado o  decoración */
+    border-radius: 5px; /* hace e boton con forma rectangular sin puntas*/
+    position: absolute;/*posiciona el boton dentro de la imagen*/
+    margin: 4px 2px;
+    font-size: 16px;
+    cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+    padding: 10px 20px;
+    text-align: center; /* se centra el boton */
+    bottom: -300px; /* esto define la pocision de abajo hacia arriba*/ /*MITAD DE PANTALLA Y UN POCO MÁS*/
+    transform: translateX(-90%);
+  }
+    .boton8 {
+     
+        background-color: #426b87; /*determina el tamaño del boton */
+        color: white;/*determina el color de las letras*/
+        padding: 10px 20px;/* deterina el tamaño del boton*/
+        text-decoration: none; /* le quita el subrayado o  decoración */
+        border-radius: 5px; /* hace e boton con forma rectangular sin puntas*/
+        position: absolute;/*posiciona el boton dentro de la imagen*/
+        margin: 4px 2px;
+        font-size: 16px;
+        cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+        padding: 10px 20px;
+        text-align: center; /* se centra el boton */
+        bottom: -340px; /* esto define la pocision de abajo hacia arriba*/ /*PANTALLA Y CACHITO*/
+        transform: translateX(-90%);
+
+}   
+.boton9{
+     
+    background-color: #426b87; /*determina el tamaño del boton */
+    color: white;/*determina el color de las letras*/
+    padding: 10px 20px;/* deterina el tamaño del boton*/
+    text-decoration: none; /* le quita el subrayado o  decoración */
+    border-radius: 5px; /* hace e boton con forma rectangular sin puntas*/
+    position: absolute;/*posiciona el boton dentro de la imagen*/
+    margin: 4px 2px;
+    font-size: 16px;
+    cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+    padding: 10px 20px;
+    text-align: center; /* se centra el boton */
+    bottom: 5px; /* esto define la pocision de abajo hacia arriba*/ /*PANTALLA Y CACHITO*/
+    transform: translateX(-50%);
+
+}   
+
+.boton10 {
+     
+    background-color: #426b87; /*determina el tamaño del boton */
+    color: white;/*determina el color de las letras*/
+    padding: 10px 20px;/* deterina el tamaño del boton*/
+    text-decoration: none; /* le quita el subrayado o  decoración */
+    border-radius: 5px; /* hace e boton con forma rectangular sin puntas*/
+    position: absolute;/*posiciona el boton dentro de la imagen*/
+    margin: 4px 2px;
+    font-size: 16px;
+    cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+    padding: 10px 20px;
+    text-align: center; /* se centra el boton */
+    bottom: -100px; /* esto define la pocision de abajo hacia arriba*/      /*MITAD DE PANTALLA BAJA*/
+    transform: translateX(-90%);
+}
+  
+
+
+.boton11 {
+     
+    background-color: #426b87; /*determina el tamaño del boton */
+    color: white;/*determina el color de las letras*/
+    padding: 10px 20px;/* deterina el tamaño del boton*/
+    text-decoration: none; /* le quita el subrayado o  decoración */
+    border-radius: 5px; /* hace e boton con forma rectangular sin puntas*/
+    position: absolute;/*posiciona el boton dentro de la imagen*/
+    margin: 4px 2px;
+    font-size: 16px;
+    cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+    padding: 10px 20px;
+    text-align: center; /* se centra el boton */
+    bottom: -900px; /* esto define la pocision de abajo hacia arriba*/      /*MITAD DE PANTALLA BAJA*/
+    transform: translateX(-50%);
+}
+
+
+.boton12 {
+     
+    background-color: #426b87; /*determina el tamaño del boton */
+    color: white;/*determina el color de las letras*/
+    padding: 10px 20px;/* deterina el tamaño del boton*/
+    text-decoration: none; /* le quita el subrayado o  decoración */
+    border-radius: 5px; /* hace e boton con forma rectangular sin puntas*/
+    position: absolute;/*posiciona el boton dentro de la imagen*/
+    margin: 4px 2px;
+    font-size: 16px;
+    cursor: pointer;/*aparece la manita cuando pasamos sobre el boton */
+    padding: 10px 20px;
+    text-align: center; /* se centra el boton */
+    bottom: -500px; /* esto define la pocision de abajo hacia arriba*/      /*MITAD DE PANTALLA BAJA*/
+    transform: translateX(-50%);
+}
+  /* Cambio de estilo al pasar el mouse sobre el botón */
+  .boton1:hover {
+      background-color: #2980b9;
+  }
+
+
+h1 {
+  color: rgb(39, 12, 3); /* Establece el color del texto en azul */
+  font-size: 40px; /* Establece el tamaño de fuente en 36 píxeles */
+ 
+  font-family: "Courier New"; /* Establece la fuente a Arial o similar */
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+h2 {
+
+  color: rgb(9, 9, 50); /* Establece el color del texto en azul */
+  font-size: 16px; /* Establece el tamaño de fuente en 24 píxeles */
+
+  font-family:"Courier New"; /* Establece la fuente a Arial o similar */
+  text-align: center; /* Centra el texto horizontalmente */
+
+
+
+}
+
+
+
+.rectangulo {
+    border: 2px solid #000; /* Borde del rectángulo negro de 2px */
+    padding: 10px; /* Espaciado dentro del rectángulo */
+    width: 110x; /* Ancho del rectángulo */
+    height: 150px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    display: table-cell;
+    margin: 12px;
+
+    }
+  
+
+
+
+ul {
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina el espaciado interno del elemento <ul> */
+}
+
+
+
+.rectangulo2 {
+    border: 2px solid #000; /* Borde del rectángulo negro de 2px */
+    padding: 10px; /* Espaciado dentro del rectángulo */
+    width: 300px; /* Ancho del rectángulo */
+    background-color: bisque;
+    border-radius: 5px;
+    display: table-cell;
+    text-align: center;
+    height: 50px;
+    margin: -50px;
+}
+ul {
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina el espaciado interno del elemento <ul> */
+}
+
+
+.rectangulo3 {
+    border: 2px solid #000; /* Borde del rectángulo negro de 2px */
+    padding: 10px; /* Espaciado dentro del rectángulo */
+    width: 300px; /* Ancho del rectángulo */
+    background-color: bisque;
+    border-radius: 5px;
+}
+ul {
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0; /* Elimina el espaciado interno del elemento <ul> */
+}
+
+.pregunta {
+    display: none;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+}
+.opciones {
+    display: flex;
+    justify-content: space-around;
+}
+.opcion {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+.opcion:hover {
+    background-color: #f0f0f0;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px; /* Espacio entre etiquetas y botones */
+}
+
+/* Estilo para los botones de radio */
+input[type="radio"] {
+    margin-right: 20px; /* Espacio entre botones de radio */
+}
+
+/* Estilo para el texto de las etiquetas */
+label[for="verdadero"] {
+    color:  #ffffff;
+}
+
+label[for="falso"] {
+    color: #ffffff;
+}
+
+  /* Aplicar estilos al elemento que contiene el texto */
+  .centrado-con-margen {
+    text-align: left; /* Centrar el texto horizontalmente */
+    margin-left: 3cm;   /* Establecer el margen izquierdo a 3 cm */
+    margin-right: 3cm;  /* Establecer el margen derecho a 3 cm */
+  }
+
+  
+  /* Aplicar estilos al elemento que contiene el texto */
+  .centrado-con-margen2 {
+    text-align: left; /* Centrar el texto horizontalmente */
+    margin-left: 4cm;   /* Establecer el margen izquierdo a 3 cm */
+    margin-right: 3cm;  /* Establecer el margen derecho a 3 cm */
+  }
+
+
+/* Estilo para el radio button */
+input[type="radio"] {
+    transform: scale(1.9); /* Aumenta el tamaño del círculo de selección */
+  }
+
+

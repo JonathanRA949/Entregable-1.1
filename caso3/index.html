@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caso clinico</title>
+    <link rel="stylesheet" href="./style.css">
+	<style>
+       
+        .imagen-superior {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 360px;
+            height: 96px;
+		}
+
+        .imagen-inferior {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 142px;
+            height: 75px;
+        }
+    </style>
+</head>
+<body>
+
+
+  <img src="imagenesinstitucionales/logosimulacion.png" alt="Imagen Superior" class="imagen-superior">
+	
+                
+ 
+    <style>
+        body {
+            background-color: #0e2cda;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container3 {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .option {
+            width: 320px;
+            height: 180px;
+            background-color: rgb(252, 252, 252);
+            color: rgb(253, 253, 253);
+            text-align: center;
+            margin: -10px;
+            border: 2px solid rgb(17, 14, 14);
+            padding: 5px;
+        }
+
+        .answer {
+            background-color:  rgb(95, 95, 129); 
+             width: 200px;
+            height: 50px;
+            margin: 10px;
+        }
+
+        .correct {
+            background-color: green;
+        }
+
+        .incorrect {
+            background-color: red;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+
+        
+h2 {
+
+color: rgb(17, 17, 63); /* Establece el color del texto en azul */
+font-size: 10px; /* Establece el tamaño de fuente en 24 píxeles */
+text-align: "right"; /* Centra el texto horizontalmente */
+
+
+
+}
+ul, ol {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: justify; /* Distribuir elementos uniformemente */
+}
+    
+
+        
+    </style>
+</head>
+<body>
+    <div class="container3" class="centrado-con-margen">
+        <div class="option droppable" data-correct-answer="maullar"> 
+          
+          <ul>
+            
+            <li><h2>- Mascota única.</h2></li>
+              <li><h2>-No sale de casa.</h2></li>
+              <li><h2>-Dieta:  proplan y alimentación a libre acceso.</h2></li>
+              <li><h2>-Toma agua de la llave y se cambia cada 2 días.</h2></li>
+              <li><h2>-Medicina preventiva:  vacunas y desparasitación interna y externa vigentes. </h2></li>
+
+          </ul> </div>
+
+        <div class="option droppable" data-correct-answer="ladrar">
+          <ul>
+          <li><h2>-Desde hace 3 días ha tenido dificultad para orinar; orinaba por gotas alrededor y fuera del arenero, además vocaliza mucho y fuerte al orinar 
+          (ver el video después del examen físico general).</h2></li>
+          <li><h2>- Hace tres días se le vio orinar con sangre.</h2></li>
+            <li><h2>-Maúlla muy fuerte.</h2></li>
+              <li><h2>-Deprimido.</h2></li>
+                <li><h2>-Lamido del área peneana. </h2></li>
+                  <li><h2>-Desde ayer no lo han visto orinar.</h2></li>  
+                </ul> </div>
+        <div class="option droppable" data-correct-answer="relinchar">
+
+          <ul>
+          <li><h2>- Nombre: Pascualino.</h2></li>
+        
+          <li><h2>-Especie: Felis silvestris catus. </h2></li>
+            <li><h2>-Raza: europeo doméstico.</h2></li>
+              <li><h2>-Sexo: macho castrado.</h2></li>
+                <li><h2>-Color: blanco.  </h2></li>
+                  <li><h2>-Edad: 10 años.</h2></li>
+                </ul> </div>
+    </div>
+  </div>
+
+    <div class="container3">
+        <div class="option answer draggable" data-answer="maullar"> HISTORIA CLINICA </div>
+        <div class="option answer draggable" data-answer="relinchar"> RESEÑA </div>
+        <div class="option answer draggable" data-answer="ladrar">ANAMNESIS </div>
+    </div>
+
+    <div id="result"></div>
+    <a href= "inicio.html" class="boton13">Siguiente</a>
+
+    <script>
+        const draggableItems = document.querySelectorAll(".draggable");
+        const droppableItems = document.querySelectorAll(".droppable");
+        const resultDiv = document.getElementById("result");
+
+        draggableItems.forEach(draggable => {
+            draggable.setAttribute("draggable", "true");
+            draggable.addEventListener("dragstart", () => {
+                draggable.classList.add("dragging");
+            });
+
+            draggable.addEventListener("dragend", () => {
+                draggable.classList.remove("dragging");
+            });
+        });
+
+        droppableItems.forEach(droppable => {
+            droppable.addEventListener("dragover", e => {
+                e.preventDefault();
+            });
+
+            droppable.addEventListener("drop", e => {
+                const draggedItem = document.querySelector(".dragging");
+                const correctAnswer = droppable.getAttribute("data-correct-answer");
+                const userAnswer = draggedItem.getAttribute("data-answer");
+
+                if (correctAnswer === userAnswer) {
+                    droppable.classList.remove("incorrect");
+                    droppable.classList.add("correct");
+                } else {
+                    droppable.classList.remove("correct");
+                    window.location.href = "retro.html#seccion1";
+                }
+
+                if (correctAnswer === userAnswer && !document.querySelector(".incorrect")) {
+                    resultDiv.textContent = "";
+                } else {
+                  window.location.href = "retro.html#seccion1";
+                }
+
+                draggedItem.setAttribute("draggable", "false");
+                draggedItem.style.cursor = "not-allowed";
+            });
+        });
+    </script>
+</body>
+</html>

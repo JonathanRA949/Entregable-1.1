@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caso clinico</title>
+    <link rel="stylesheet" href="./style.css">
+
+   
+</head>
+<body style=background-color:#02165D;>
+    
+              
+          
+
+   
+             
+    <div class="container" style=background-color:#02165D>        
+  
+  
+    <div class="seccion" id="seccion1">
+       
+            <img id="imagen1" src="img/listap.gif" alt="Imagen 1">
+       
+        <div class="Pregunta">
+    <form id="examenForm">
+         
+        <div style="text-align-justify"> 
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="3"></p>
+        <label for="pregunta1"><h3> <p style="color: #FFFFFF";> Revise la lista de problemas y seleccione la opción que contenga la correcta relación entre los problemas maestros y secundarios: </h3> </label><br>
+        <input type="radio" name="pregunta1" value="1">  
+
+
+        <nav>
+        <ul>
+        <p> <p style="color: #FFFFFF";> I Poliuria/polidipsia (3,8,9)</p>
+        <P> <p style="color: #FFFFFF";> II Dificultad para saltar (4,5,6)</P>
+        <P> <p style="color: #FFFFFF";> III Sobrepeso</P>
+        </ul>
+        </nav>
+        <br> &nbsp;
+        <input type="radio" name="pregunta1" value="2"> 
+        <nav>
+        <ul>
+        <p> <p style="color: #FFFFFF";> I vómito (1,2,3,4,9)</p>
+        <P> <p style="color: #FFFFFF";> II Posición plantígrada  bilateral (7,8,9)</P>
+        </ul>
+        </nav>
+		<br> &nbsp;
+        <input type="radio" name="pregunta1" value="3"><br>
+        <nav>
+            <ul>
+            <p> <p style="color: #FFFFFF";> I Poliuria/polidipsia (3,4,5)</p>
+            <P> <p style="color: #FFFFFF";> II Posición plantígrada bilateral (7,8,9)</P>
+            <P> <p style="color: #FFFFFF";> III Sobrepeso</P>
+            </ul>
+            </nav>
+		<br> &nbsp;
+        <input type="radio" name="pregunta1" value="4"> 
+        <nav>
+            <ul>
+            <p> <p style="color: #FFFFFF";> I Pérdida de peso (1,2,5) </p>
+            <P> <p style="color: #FFFFFF";> II Atrofia muscular (7,8,10) </P>
+        
+            </ul>
+            </nav>
+
+        <br>
+
+        <input type="submit"  class="boton3" value="Enviar respuestas"; >
+    </form>
+</div>
+   
+    <div id="resultado"></div>
+    </div>
+
+    <script>
+     
+        document.getElementById('examenForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que se envíe el formulario por defecto
+
+            // Obtén las respuestas del formulario
+            var respuesta1 = document.querySelector('input[name="pregunta1"]:checked');
+
+            // Verifica las respuestas y proporciona retroalimentación
+            var resultado = document.getElementById('resultado');
+            resultado.innerHTML = '';
+
+            if (respuesta1) {
+                if (respuesta1.value === '1') {
+                    window.location.href = "retro.html#seccion1"; // Reemplaza con la URL de tu cuestionario 
+
+                } else if  (respuesta1.value === '2') {
+                    window.location.href = "retro.html#seccion2"; // Reemplaza con la URL de tu cuestionario
+    
+
+                } else if (respuesta1.value === '3') {
+                    window.location.href = "retro.html#seccion3"; 
+
+
+                } else if (respuesta1.value === '4') {
+                    window.location.href = "retro.html#seccion4";
+                } else {
+                resultado.innerHTML = 'Por favor, responde todas las preguntas.';
+                imagen.style.display = "block";
+               
+    
+                
+            }}
+        });
+
+      
+    </script>
+
+
+     
+
+</div>    
+</body>
+</html>
+

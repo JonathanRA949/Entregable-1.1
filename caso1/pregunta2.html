@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caso clinico</title>
+    <link rel="stylesheet" href="./style.css">
+	<style>
+        .imagen-superior {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 360px;
+            height: 96px;
+		}
+
+        .imagen-inferior {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 142px;
+            height: 75px;
+        }
+    </style>
+
+   
+        
+</head>
+
+
+<body style=background-color:#02165D;>
+    
+	<img src="imagenesinstitucionales/logosimulacion.png" alt="Imagen Superior" class="imagen-superior">
+
+                
+   
+
+             
+    <div class="container" style=background-color:#02165D;>        
+        <div style="text-align:center;"> 
+    <div class="seccion" id="seccion2">
+    
+       
+   
+        <div class="Pregunta">
+    <form id="examenForm">
+         
+
+        <p><font face="Verdana, Arial, Helvetica, sans-serif" size="3"></p>
+        <label for="pregunta2"><h1> <p style="color: #FFFFFF";> PLAN DIAGNÓSTICO   </h1> </label>
+        <label for="pregunta2"><h2> <p style="color: #FFFFFF";> Poliuria-polidipsia (2,3,4,5)  </h2> </label>
+        <label for="pregunta2"><h2> <p style="color: #FFFFFF";> Posición plantígrada (7,8,9)  </h2> </label>
+        <label for="pregunta2"><h2> <p style="color: #FFFFFF";> Selecciona la opción correcta de diagnósticos diferenciales para cada problema primario:   </h2> </label><br>
+        
+
+
+        <div class="rectangulo">
+        <input type="radio" name="pregunta2" value="1">  
+        <nav>
+        <ul>
+        <p>I Diabetes mellitus, Enfermedad renal, Hipertiroidismo, Insuficiencia hepática, Hiperadrenocorticismo.  </p>
+        <P>II Diabetes mellitus, Ruptura de tendón del calcáneo común</P>
+              </ul>
+        </nav>
+        </div>
+
+
+        <div class="rectangulo">
+        <input type="radio" name="pregunta2" value="2"> 
+        <nav>
+        <ul>
+        <p> I Hipotiroidismo, Lipidosis hepática </p>
+        <P> II Fractura de tarsos, Linfoma cutáneo tarsal, Miastenia gravis  
+        </P>
+        </ul>
+        </nav>
+    </div>
+
+
+ <div class="rectangulo">
+        <input type="radio" name="pregunta2" value="3"><br>
+        <nav>
+            <ul>
+            <p> I Diabetes mellitus, Hipertiroidismo , Hiperadrenocorticismo, Insuficiencia hepática</p>
+            <P>II Ruptura de tendón del calcáneo común, Enfermedad renal, Miastenia gravis, Diabetes mellitus </P>
+            </ul>
+            </nav>
+        </div>
+
+
+        <div class="rectangulo">
+        <input type="radio" name="pregunta2" value="4"> 
+        <nav>
+            <ul>
+            <p>  I Diabetes mellitus, Hipotiroidismo </p>
+            <P>II Tromboembolismo arterial felino, Fractura de fémur </P>
+        
+            </ul>
+            </nav>
+        </div>
+
+        <br>
+        <div style="text-align:center;"> 
+        <input type="submit"  class="boton1" value="Enviar respuestas"; >
+        </div>
+    </form>
+</div>
+   
+    <div id="resultado"></div>
+    </div>
+</div>
+</div>
+    <script>
+     
+        document.getElementById('examenForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que se envíe el formulario por defecto
+
+            // Obtén las respuestas del formulario
+            var respuesta1 = document.querySelector('input[name="pregunta2"]:checked');
+
+            // Verifica las respuestas y proporciona retroalimentación
+            var resultado = document.getElementById('resultado');
+            resultado.innerHTML = '';
+
+            if (respuesta1) {
+                if (respuesta1.value === '1') {
+                    window.location.href = "retro.html#seccion5"; 
+
+                } else if  (respuesta1.value === '2') {
+                    window.location.href = "retro.html#seccion6"; 
+    
+
+                } else if (respuesta1.value === '3') {
+                    window.location.href = "retro.html#seccion7"; 
+
+
+                } else if (respuesta1.value === '4') {
+                    window.location.href = "retro.html#seccion8";
+                } else {
+                resultado.innerHTML = 'Por favor, responde todas las preguntas.';
+                imagen.style.display = "block";
+               
+    
+                
+            }}
+        });
+
+      
+    </script>
+
+   
+
+</div>    
+</body>
+</html>
+
