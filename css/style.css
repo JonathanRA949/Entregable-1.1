@@ -48,7 +48,7 @@ body {
 }
 
 .container {
-     max-width: 1172px;
+     max-width: 1200px;
 }
 
 a {
@@ -1452,6 +1452,6 @@ ul.img_icon li {
      background-color: gray;
     margin: 5px 0px 0px;
     padding: 10px;
-    height: 90px;
-    width: 300px;
+    height: 100px;
+    width: 310px;
 }
