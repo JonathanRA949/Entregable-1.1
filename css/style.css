@@ -1442,16 +1442,16 @@ ul.img_icon li {
 
 .bloqueMedio{
      background-color: gray;
-    margin: 5px 0px 0px;
-    padding: 10px;
-    height: 300px;
-    width: 250px;
+     margin: 5px 0px 0px;
+     padding: 10px;
+     height: 300px;
+     width: 250px;
 }
 
 .bloqueLargo{
      background-color: gray;
-    margin: 5px 0px 0px;
-    padding: 10px;
-    height: 100px;
-    width: 310px;
+     margin: 5px 0px 0px;
+     padding: 10px;
+     height: 130px;
+     width: 310px;
 }
